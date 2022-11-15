@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+.container {
+  width: 1280px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header .container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  width: 100px;
+  object-fit: contain;
+}
+header button {
+  width: 120px;
+  height: 30px;
+}
+header input {
+  width: 50%;
+  height: 40px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+header .link {
+  border: 1px black solid;
+  background-color: aqua;
+  height: 40px;
+  width: 200px;
+}
+.product-details .link {
+  height: 40px;
+  width: 200px;
+  border: 1px black solid;
+  padding: 5px 20px;
+}
+.payment-button-container {
+  margin-top: 30px;
+}
+.avatar {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+article {
+  width: 240px;
+}
+article > img {
+  height: 360px;
+  width: 240px;
+  object-fit: cover;
+}
+.owner-details {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-signup form {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.publish-form form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 1;
+}
+.publish-form form > div {
+  display: flex;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.offer-details-price {
+  font-size: 32px;
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.upper-offer-details {
+  border-bottom: 1px solid grey;
+  padding-bottom: 50px;
+}
+.payment {
+  display: flex;
+  flex-direction: column;
+}
+.payment-label {
+  font-weight: bold;
+}
+.card-container {
+  width: 600px;
 }
